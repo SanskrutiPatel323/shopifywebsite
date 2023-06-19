@@ -1,0 +1,189 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title> Shopifie | Online Store </title>
+<link rel="stylesheet" href="style1.css">
+</head>
+<body>
+         <div class="navbar">
+	     <nav>
+	         <ul>
+			     <li><a href="cart.html"><img id="cart" src="cart.png"></img></a></li>
+		         <li><a href="contact.html"> Contact </a></li>
+				 <li><a href="About_Us.html"> About Us </a></li>
+			     <li><a href="product.html"> Products </a></li>
+			     <li><a href="home.html"> Home </a></li>
+				 <li><b><button type="button"  id="login"><a href="login.html">Login</a></button></b></li>
+	             <li><b><button type="button"  id="register"><a href="register.html">Register</a></button></b></li>
+				 &nbsp;&nbsp;&nbsp; <img id="img" src="shopifie.jpg"> </img>
+		     </ul>	 
+	     </nav>
+         </div>
+		 <div class="row">
+		   <div class="leftcolumn">
+             <div class="card"><center>
+                 <h1 style="font-size:70px;">
+				 <br>&nbsp;&nbsp;&nbsp; Give Yourself <br>&nbsp;&nbsp;&nbsp; A New Style!</h1>
+				 <h5 style="font-size:25px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Real Style is never right or wrong. <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;It's a matter of being yourself on purpose. </h5></center>
+             </div>
+		   </div>
+		   <div class="rightcolumn">
+		     <div class="card"><br><br><br>
+			     <div class="slideshow-container">
+
+                   <div class="mySlides fade">
+                   <img src="fashion.jpeg" style="width:100%; height:400px;">
+                   </div>
+				   
+                   <div class="mySlides fade">
+                   <img src="img1.jpg" style="width:100%; height:400px;">
+                   </div>
+
+                   <div class="mySlides fade">
+                   <img src="img2.jpg" style="width:100%; height:400px;">
+                   </div>
+
+                   <div class="mySlides fade">
+                   <img src="img3.jpeg" style="width:100%; height:400px;">
+                   </div>
+                   
+                 </div>
+				 <br>
+
+                 <div style="text-align:center">
+                 <span class="dot"></span> 
+                 <span class="dot"></span> 
+                 <span class="dot"></span> 
+				 <span class="dot"></span>
+                 </div>
+
+                 <script>
+                 let slideIndex = 0;
+                 showSlides();
+
+                 function showSlides() {
+                     let i;
+                     let slides = document.getElementsByClassName("mySlides");
+                     let dots = document.getElementsByClassName("dot");
+                     for (i = 0; i < slides.length; i++) {
+                     slides[i].style.display = "none";  
+                     }
+                     slideIndex++;
+                     if (slideIndex > slides.length) {slideIndex = 1}    
+                     for (i = 0; i < dots.length; i++) {
+                       dots[i].className = dots[i].className.replace(" active", "");
+                     }
+                     slides[slideIndex-1].style.display = "block";  
+                     dots[slideIndex-1].className += " active";
+                     setTimeout(showSlides, 3000); // Change image every 3 seconds
+                 }
+                 </script>
+			 </div>
+           </div>			 
+		 </div> 
+	 
+		 <div class="row" style=" display: flex;">
+		      <div class="col-3" style="margin:50px; display: block; ">
+			     <img src="category-1.jpg" height="500px" width="350px">
+			  </div>
+			  <div class="col-3" style="margin:50px; display: block; ">
+			     <img src="category-2.jpg" height="500px" width="350px">
+			  </div>
+			  <div class="col-3" style="margin:50px; display: block; ">
+			     <img src="category-3.jpg" height="500px" width="350px">
+			  </div>
+		   </div>  
+        
+	<div class="small-container">
+	     <h1><center> Products </center></h1>
+		 <div class="row"style=" display: flex; margin-left:220px;">
+		     <div class="col-4" >
+			     <img src="product-1.jpg" id="p1" alt="T-shirt">
+				 <h4>Red Printed T-shirt</h4>
+				 <p> Rs.499.00</p>
+				 <a href="cart.html"><input type="button" value="Add to Cart"></a>
+			 </div>
+			 <div class="col-4">
+			     <img src="product-2.jpg" id="p2" alt="T-shirt">
+				 <h4>HRX Black Shoes</h4>
+				 <p>Rs.2999.00</p>
+				 <a href="cart.html"><input type="button" value="Add to Cart"></a>
+			 </div>
+			 <div class="col-4">
+			     <img src="product-3.jpg" id="p3" alt="T-shirt">
+				 <h4>Black Joggers</h4>
+				 <p> Rs.699.00</p
+				 <a href="cart.html"><input type="button" value="Add to Cart"></a>
+			 </div>
+			 <div class="col-4">
+			     <img src="product-4.jpg" id="p4" alt="T-shirt">
+				 <h4>Blue Plain T-shirt</h4>
+				 <p> Rs.449.00</p
+				 <a href="cart.html"><input type="button" value="Add to Cart"></a>
+			 </div>
+		 </div>	 
+		 <div class="row"style=" display: flex; margin-left:220px;">	 
+			 <div class="col-4" >
+			     <img src="product-5.jpg" id="p1" alt="T-shirt">
+				 <h4>Grey Sneakers</h4>
+				 <p> Rs.2099.00</p
+				 <a href="cart.html"><input type="button" value="Add to Cart"></a>
+			 </div>
+			 <div class="col-4">
+			     <img src="product-6.jpg" id="p2" alt="T-shirt">
+				 <h4>Black printed T-Shirt</h4>
+				 <p>Rs.499.00</p>
+				 <a href="cart.html"><input type="button" value="Add to Cart"></a>
+			 </div>
+			 <div class="col-4">
+			     <img src="product-7.jpg" id="p3" alt="T-shirt">
+				 <h4>HRX Black Socks</h4>
+				 <p> Rs.199.00</p>
+				 <a href="cart.html"><input type="button" value="Add to Cart"></a>
+			 </div>
+			 <div class="col-4">
+			     <img src="product-8.jpg" id="p4" alt="T-shirt">
+				 <h4>Black Watch</h4>
+				 <p> Rs.479.00</p>
+				 <a href="cart.html"><input type="button" value="Add to Cart"></a>
+			 </div>
+         </div>
+		 <div class="row"style=" display: flex; margin-left:220px;">	 
+			 <div class="col-4" >
+			     <img src="product-9.jpg" id="p1" alt="T-shirt">
+				 <h4>Black Leather Belt Watch</h4>
+				 <p> Rs.499.00</p>
+				 <a href="cart.html"><input type="button" value="Add to Cart"></a>
+			 </div>
+			 <div class="col-4">
+			     <img src="product-10.jpg" id="p2" alt="T-shirt">
+				 <h4>HRX Black & Red Shoes</h4>
+				 <p>Rs.2099.00</p>
+				 <a href="cart.html"><input type="button" value="Add to Cart"></a>
+			 </div>
+			 <div class="col-4">
+			     <img src="product-11.jpg" id="p3" alt="T-shirt">
+				 <h4>Gray Shoes</h4>
+				 <p> Rs.1499.00</p>
+				 <a href="cart.html"><input type="button" value="Add to Cart"></a>
+			 </div>
+			 <div class="col-4">
+			     <img src="product-12.jpg" id="p4" alt="T-shirt">
+				 <h4>Black Joggers</h4>
+				 <p> Rs.699.00</p>
+				 <a href="cart.html"><input type="button" value="Add to Cart"></a>
+			 </div>
+         </div>
+     </div>
+	 <div class="footer">
+	     <div class="container">
+		     <div class="row">
+			     <div class="footer-col-1">
+				     <h3>All rights reserved - 2022 | Shopifie - Online Store</h3>
+					 <p>Trademarks, Logos and Brands are the property of their respective owners.</p>
+				 </div>
+			 </div>
+		 </div>
+	 </div>
+</body>
+</html>

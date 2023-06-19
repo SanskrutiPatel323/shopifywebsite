@@ -1,0 +1,119 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title> Shopifie | Online Store </title>
+<link rel="stylesheet" href="style1.css">
+<script>  
+function validateform(){  
+
+var fname = document.myform.fname.value;  
+var lname = document.myform.lname.value;  
+var address = document.myform.address.value;  
+var email = document.myform.email.value;  
+var uname = document.myform.uname.value;  
+var password = document.myform.password.value;
+var contact = document.myform.contact.value; 
+var x=document.myform.email.value;  
+var atposition=x.indexOf("@");  
+var dotposition=x.lastIndexOf("."); 
+var contact=document.myform.contact.value;  
+  
+if (fname==null || fname==""){  
+  alert("First name can't be blank");  
+  return false;  
+}
+else if (lname==null || lname==""){  
+  alert("Last name can't be blank");  
+  return false;  
+}
+else if (address==null || address==""){  
+  alert("Address can't be blank");  
+  return false;  
+}
+else if (email==null || email==""){  
+  alert("Email can't be blank");  
+  return false;  
+}
+else if (atposition<2 || dotposition<atposition+4 || dotposition+2>=x.length){  
+  alert("Please enter a valid e-mail address \n atpostion:"+atposition+"\n dotposition:"+dotposition);  
+  return false;  
+  } 
+else if (uname==null || uname==""){  
+  alert("User name can't be blank");  
+  return false;  
+}
+else if(password==null || password==""){  
+  alert("Password can't be blank");  
+  return false;  
+  }
+else if(password.length<8){
+  alert("Password must have atleast 8 characters.");
+  return false;
+  }
+else if(contact==null || contact==""){  
+  alert("Contact No. can't be blank");  
+  return false;  
+  }  
+else if (isNaN(contact)){
+  alert("Enter Numeric value only");
+  return false;
+}
+} 
+</script>
+</head>
+<body>
+     <div class="navbar">
+	     <nav>
+	         <ul>
+			     <li><a href="cart.html"><img id="cart" src="cart.png"></img></a></li>
+		         <li><a href="contact.html"> Contact </a></li>
+				 <li><a href="About_Us.html"> About Us </a></li>
+			     <li><a href="product.html"> Products </a></li>
+			     <li><a href="home.html"> Home </a></li>
+				 <li><b><button type="button"  id="login"><a href="login.html">Login</a></button></b></li>
+	             <li><b><button type="button"  id="register"><a href="register.html">Register</a></button></b></li>
+				 &nbsp;&nbsp;&nbsp; <img id="img" src="shopifie.jpg"> </img>
+		     </ul>	 
+	     </nav>
+         </div>
+		 <br><br><br><br><br>
+		 
+         <center>
+		 <div class="register">
+	         <form name="myform"  action="login.html" onsubmit="return validateform()" >  
+			 <br>
+			 <h1 id="h1"><u> REGISTER </u> </h1>
+          
+             <label id="txt"> First Name:</label> 
+			 <input type="text" name="fname"><br><br>
+             <label id="txt"> Last Name: </label> 
+			 <input type="text" name="lname"><br><br>
+             <label id="txt"> Address:   </label> 
+			 <textarea name="address"></textarea><br> <br>
+             <label id="txt"> E-mail:    </label> 
+			 <input type="text" name="email"><br><br>
+             <label id="txt"> User Name: </label> 
+			 <input type="text" name="uname"><br><br>
+             <label id="pwd"> Password:  </label> 
+			 <input type="password" maxlength="8"; name="password"><br><br>
+             <label id="txt"> Contact No.:</label> 
+			 <input type="text" maxlength="10"; name="contact"><br><br><br>
+             <center>
+			 <input type="submit" value="Login"> 
+			 </center> 
+             </form> 
+             <!--<p> Already registered? <a href="login.html"> Login </a> </p>	-->	 
+         </div>
+		 </center>   
+     <!--<div class="footer">
+	     <div class="container">
+		     <div class="row">
+			     <div class="footer-col-1">
+				     <h3>All rights reserved - 2022 | Shopifie - Online Store</h3>
+					 <p>Trademarks, Logos and Brands are the property of their respective owners.</p>
+				 </div>
+			 </div>
+		 </div>
+	 </div>	-->
+</body>
+</html>

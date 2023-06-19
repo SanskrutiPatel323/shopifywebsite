@@ -1,0 +1,100 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title> Shopifie | Online Store </title>
+<link rel="stylesheet" href="style1.css">
+<script>
+function validateform(){  
+
+var name = document.myform.name.value;  
+var email = document.myform.email.value;  
+var contact = document.myform.contact.value; 
+var message= document.myform.message.value;
+var x=document.myform.email.value;  
+var atposition=x.indexOf("@");  
+var dotposition=x.lastIndexOf("."); 
+var contact=document.myform.contact.value;  
+  
+if (name==null || name==""){  
+  alert("First name can't be blank");  
+  return false;  
+}
+else if (email==null || email==""){  
+  alert("Email can't be blank");  
+  return false;  
+}
+else if (atposition<2 || dotposition<atposition+4 || dotposition+2>=x.length){  
+  alert("Please enter a valid e-mail address \n atpostion:"+atposition+"\n dotposition:"+dotposition);  
+  return false;  
+  } 
+else if(contact==null || contact==""){  
+  alert("Contact No. can't be blank");  
+  return false;  
+  }  
+else if (isNaN(contact)){
+  alert("Enter Numeric value only");
+  return false;
+  }
+else if(contact.length<10 || contact.length>10){
+  alert("Contact No. can be of 10 digits only.");
+  return false;
+  }
+ else if (message==null || message==""){  
+  alert("Message can't be blank");  
+  return false;  
+}
+} 
+
+</script>
+</head>
+<body>
+         <div class="navbar">
+	     <nav>
+	         <ul>
+			     <li><a href="cart.html"><img id="cart" src="cart.png"></img></a></li>
+		         <li><a href="contact.html"> Contact </a></li>
+				 <li><a href="About_Us.html"> About Us </a></li>
+			     <li><a href="product.html"> Products </a></li>
+			     <li><a href="home.html"> Home </a></li>
+				 <li><b><button type="button"  id="login"><a href="login.html">Login</a></button></b></li>
+	             <li><b><button type="button"  id="register"><a href="register.html">Register</a></button></b></li>
+				 &nbsp;&nbsp;&nbsp; <img id="img" src="shopifie.jpg"> </img>
+		     </ul>	 
+	     </nav>
+         </div>
+		 <div class="contact">
+		    <div class="leftcolumn">
+		     <br><br><br><br><br>
+		     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <iframe style="border:2px solid gray; border-radius:10px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7382.3032332430175!2d73.174085!3d22.310105!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfab18a95af816204!2sNeptune%20Tower!5e0!3m2!1sen!2sin!4v1654754659004!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		    </div>
+			<div class="rightcolumn"><center>
+			   <br><br> <br><br><h1 style="color:black; font-size:40;"> Contact Us for more... </h1>
+			   <form name="myform" onsubmit="return validateform()"><br><br>
+			      <label id="txt"> Your Name: </label>
+				  <input type="text" name="name"><br><br><br>
+                  <label id="txt"> Your E-mail: </label> 
+			      <input type="text" name="email"><br><br><br>
+				  <label id="txt"> Your Contact: </label> 
+			      <input type="text" name="contact"><br><br><br>
+				  <label id="txt"> Your Message: </label> 
+			      <textarea name="message"></textarea><br><br><br>
+				  <center>
+			 <input type="submit" value="Send"> 
+			 </center>
+			 </form>
+		    </div>
+		 </div>
+		 <p>_______________________________________________________________________________________________________________________________________________________________________________</p>
+		 </p>
+		 <div class="footer">
+	     <div class="container">
+		     <div class="row">
+			     <div class="footer-col-1">
+				     <h3>All rights reserved - 2022 | Shopifie - Online Store</h3>
+					 <p>Trademarks, Logos and Brands are the property of their respective owners.</p>
+				 </div>
+			 </div>
+		 </div>
+	 </div>
+</body>
+</html>
