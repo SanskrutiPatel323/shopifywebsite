@@ -1,0 +1,66 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title> Shopifie | Online Store </title>
+<link rel="stylesheet" href="style1.css">
+<script>  
+function validate(){  
+
+var name = document.myform.uname.value;  
+var pass = document.myform.password.value;  
+
+if (name.length<5){  
+  alert("Username can't be less than 5 characters.");  
+  return false;  
+}
+ else if (pass.length<8){  
+  alert("Password must be of atleast 8 characters.");  
+  return false;  
+  }  
+} 
+
+</script>
+</head>
+<body>
+     <div class="navbar">
+	     <nav>
+	         <ul>
+			     <li><a href="cart.html"><img id="cart" src="cart.png"></img></a></li>
+		         <li><a href="contact.html"> Contact </a></li>
+				 <li><a href="About_Us.html"> About Us </a></li>
+			     <li><a href="product.html"> Products </a></li>
+			     <li><a href="home.html"> Home </a></li>
+				 <li><b><button type="button"  id="login"><a href="login.html">Login</a></button></b></li>
+	             <li><b><button type="button"  id="register"><a href="register.html">Register</a></button></b></li>
+				 &nbsp;&nbsp;&nbsp; <img id="img" src="shopifie.jpg"> </img>
+		     </ul>	 
+	     </nav>
+         </div>
+		 <br><br><br><br><br>
+		 
+         <center>
+		 <div class="login">
+	         <form name="myform"   onsubmit="return validate()" >  
+			 <br>
+			 <h1 id="h1"><u> LOGIN </u> </h1>
+             
+             <p id="txt" style="text-align: left; margin-left: 115px;">User Name:</p> <input type="text" name="uname"><br><br>
+             <p id="pwd" style="text-align: left; margin-left: 115px;">Password:</p> <input type="password" name="password"><br> <br><br>
+
+             <center><input type="submit" value="Login" onclick="home.html"> </center> 
+             </form> 
+             <center><p style="text-align: left; margin-left: 15px;"> Didn't register yet? <a href="register.html"> Register </a> </center></p>		 
+         </div>
+		 </center> <br><br><br><br>
+         <div class="footer">
+	     <div class="container">
+		     <div class="row">
+			     <div class="footer-col-1">
+				     <h3>All rights reserved - 2022 | Shopifie - Online Store</h3>
+					 <p>Trademarks, Logos and Brands are the property of their respective owners.</p>
+				 </div>
+			 </div>
+		 </div>
+	 </div>	
+</body>
+</html>
